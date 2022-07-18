@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <title>Title</title>
+        <title>{Component.title || 'DS Pack'}</title>
       </Head>
       <Component {...pageProps} />
     </>
