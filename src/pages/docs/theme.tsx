@@ -117,69 +117,100 @@ export default function Packages() {
             <Text>
               Black and White, primarily for backgrounds and text color
             </Text>
-            <Stack inline gap="$4">
+            <Box
+              display="grid"
+              gridTemplateColumns={{
+                _: '1fr',
+                small: '1fr 1fr',
+              }}
+            >
               <Swatch backgroundColor="$black" color="$white">
                 black
               </Swatch>
               <Swatch backgroundColor="$white" color="$black">
                 white
               </Swatch>
-            </Stack>
+            </Box>
           </Box>
           <Box>
             <Text>
               Disabled colors, primarily for backgrounds and text colors on
               disabled elements
             </Text>
-            <Stack inline gap="$4">
+            <Box
+              display="grid"
+              gridTemplateColumns={{
+                _: '1fr',
+                small: '1fr 1fr',
+              }}
+            >
               <Swatch backgroundColor="$disabledFill" color="$white">
                 disabledFill
               </Swatch>
               <Swatch backgroundColor="$disabledBg" color="$black">
                 disabledBg
               </Swatch>
-            </Stack>
+            </Box>
           </Box>
           <Box>
             <Text>
               Accent colors, primarily for backgrounds on action-oriented
               elements
             </Text>
-            <Stack gap="$4">
-              <Stack inline justifyContent="space-evenly">
-                <Swatch backgroundColor="$primaryLight" color="$black">
-                  primaryLight
-                </Swatch>
-                <Swatch backgroundColor="$primary" color="$white">
-                  primary
-                </Swatch>
-                <Swatch backgroundColor="$primaryDark" color="$white">
-                  primaryDark
-                </Swatch>
-              </Stack>
-              <Stack inline justifyContent="space-evenly">
-                <Swatch backgroundColor="$secondaryLight" color="$black">
-                  secondaryLight
-                </Swatch>
-                <Swatch backgroundColor="$secondary" color="$white">
-                  secondary
-                </Swatch>
-                <Swatch backgroundColor="$secondaryDark" color="$white">
-                  secondaryDark
-                </Swatch>
-              </Stack>
-              <Stack inline justifyContent="space-evenly">
-                <Swatch backgroundColor="$tertiaryLight" color="$black">
-                  tertiaryLight
-                </Swatch>
-                <Swatch backgroundColor="$tertiary" color="$white">
-                  tertiary
-                </Swatch>
-                <Swatch backgroundColor="$tertiaryDark" color="$white">
-                  tertiaryDark
-                </Swatch>
-              </Stack>
-            </Stack>
+            <Box
+              display="grid"
+              gridTemplateColumns={{
+                _: '1fr',
+                small: '1fr 1fr',
+                medium: '1fr 1fr 1fr',
+              }}
+            >
+              <Swatch backgroundColor="$primaryLight" color="$black">
+                primaryLight
+              </Swatch>
+              <Swatch backgroundColor="$primary" color="$white">
+                primary
+              </Swatch>
+              <Swatch backgroundColor="$primaryDark" color="$white">
+                primaryDark
+              </Swatch>
+            </Box>
+            <Box
+              display="grid"
+              gridTemplateColumns={{
+                _: '1fr',
+                small: '1fr 1fr',
+                medium: '1fr 1fr 1fr',
+              }}
+            >
+              <Swatch backgroundColor="$secondaryLight" color="$black">
+                secondaryLight
+              </Swatch>
+              <Swatch backgroundColor="$secondary" color="$white">
+                secondary
+              </Swatch>
+              <Swatch backgroundColor="$secondaryDark" color="$white">
+                secondaryDark
+              </Swatch>
+            </Box>
+            <Box
+              display="grid"
+              gridTemplateColumns={{
+                _: '1fr',
+                small: '1fr 1fr',
+                medium: '1fr 1fr 1fr',
+              }}
+            >
+              <Swatch backgroundColor="$tertiaryLight" color="$black">
+                tertiaryLight
+              </Swatch>
+              <Swatch backgroundColor="$tertiary" color="$white">
+                tertiary
+              </Swatch>
+              <Swatch backgroundColor="$tertiaryDark" color="$white">
+                tertiaryDark
+              </Swatch>
+            </Box>
           </Box>
         </Stack>
       </Layout>
