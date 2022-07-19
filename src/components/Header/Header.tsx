@@ -24,7 +24,7 @@ export default function Header(props) {
           <Link href="/">DS Pack</Link>
         </Heading>
         <Box display="flex" alignItems="center" justifyContent="space-evenly">
-          <Link href="/packages">Packages ➡️</Link>
+          <Link href="/packages">Packages 📦</Link>
         </Box>
       </Box>
     </Box>

@@ -1,29 +1,76 @@
-import { Box, Heading, List, ListItem } from '@ds-pack/components'
-import { Header, Link } from '../components'
+import { Stack, Heading, List, ListItem } from '@ds-pack/components'
+import { Header, Layout, Link } from '../components'
+
+// @TODO: Fix style composition!
+// function StackList(props) {
+//   return <Stack is={List} variant="base" {...props} />
+// }
 
 export default function Packages() {
   return (
     <>
       <Header />
-      <Box>
-        <Heading is="h2" variant="h3">
+      <Layout mt="$8" mode="condensed">
+        <Heading mb="$4" is="h2" variant="h3">
           DS Pack Packages:
         </Heading>
-        <List>
-          <ListItem>
-            <Link href="/theme">Theme</Link>
+        <List
+          // is={StackList}
+          // gap="$2"
+          // props={{
+          //   is: ListItem,
+          // }}
+          variant="base"
+          display="grid"
+          gridTemplateColumns="1fr 1fr 1fr"
+        >
+          <ListItem mb="$2">
+            <Link
+              border="solid 1px"
+              flexGrow="1"
+              borderRadius="$small"
+              p="$4"
+              href="/docs/theme"
+            >
+              Theme
+            </Link>
+          </ListItem>
+          <ListItem mb="$2">
+            <Link
+              border="solid 1px"
+              flexGrow="1"
+              borderRadius="$small"
+              p="$4"
+              href="/docs/components"
+            >
+              Components
+            </Link>
           </ListItem>
           <ListItem>
-            <Link href="/components">Components</Link>
+            <Link
+              border="solid 1px"
+              flexGrow="1"
+              borderRadius="$small"
+              p="$4"
+              mb="$2"
+              href="/docs/use-media"
+            >
+              useMedia
+            </Link>
           </ListItem>
           <ListItem>
-            <Link href="/use-media">useMedia</Link>
-          </ListItem>
-          <ListItem>
-            <Link href="/use-refs">useRefs</Link>
+            <Link
+              border="solid 1px"
+              flexGrow="1"
+              borderRadius="$small"
+              p="$4"
+              href="/docs/use-refs"
+            >
+              useRefs
+            </Link>
           </ListItem>
         </List>
-      </Box>
+      </Layout>
     </>
   )
 }
