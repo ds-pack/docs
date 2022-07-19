@@ -1,6 +1,7 @@
-# Template Next.js App
+# DS Pack Docs Site
 
-This repo acts as a template repo for some of my Next.js applications.
+This repo contains the documentation for the various libraries maintained within
+the [DS Pack GitHub Organization](https://github.com/ds-pack?type=source).
 
 ## Getting Started:
 
