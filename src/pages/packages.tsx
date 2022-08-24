@@ -1,4 +1,4 @@
-import { Stack, Heading, List, ListItem } from '@ds-pack/components'
+import { Stack, Box, Heading, List, ListItem } from '@ds-pack/components'
 import { Header, Layout, Link } from '../components'
 
 // @TODO: Fix style composition!
@@ -15,13 +15,13 @@ export default function Packages() {
           DS Pack Packages:
         </Heading>
         <List
-          // is={StackList}
           // gap="$2"
           // props={{
           //   is: ListItem,
           // }}
           variant="base"
           display="grid"
+          gap={4}
           gridTemplateColumns="1fr 1fr 1fr"
         >
           <ListItem mb="$2">
