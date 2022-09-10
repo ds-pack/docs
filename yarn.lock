@@ -286,6 +286,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ds-pack/docs@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@ds-pack/docs@workspace:."
+  dependencies:
+    "@babel/core": ^7.18.0
+    "@babel/plugin-proposal-export-default-from": ^7
+    "@babel/runtime": ^7
+    "@ds-pack/components": latest
+    "@ds-pack/use-refs": ^1
+    "@types/node": ^14
+    "@types/react": ^18
+    "@vanilla-extract/babel-plugin": "*"
+    "@vanilla-extract/css": "*"
+    "@vanilla-extract/dynamic": "*"
+    "@vanilla-extract/next-plugin": "*"
+    babel-plugin-transform-imports: 2.0.0
+    nanopop: ^2
+    next: canary
+    next-transpile-modules: ^9.0.0
+    polished: ^4.2.2
+    rainbow-sprinkles: ^0.12
+    react: experimental
+    react-dom: experimental
+    typescript: ^4
+    webpack: ^5
+  languageName: unknown
+  linkType: soft
+
 "@ds-pack/use-refs@npm:^1":
   version: 1.0.0
   resolution: "@ds-pack/use-refs@npm:1.0.0"
@@ -1733,34 +1761,6 @@ __metadata:
   checksum: 3b7a1b4d86fa940aad46d9e73d1e8739335efd4c48322cb37d073eb6f80f5281889bf0320c6d8ffcfa1a0dd5bfdbd0f9d037e252ef972aca595330538aac4d51
   languageName: node
   linkType: hard
-
-"template-next-app@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "template-next-app@workspace:."
-  dependencies:
-    "@babel/core": ^7.18.0
-    "@babel/plugin-proposal-export-default-from": ^7
-    "@babel/runtime": ^7
-    "@ds-pack/components": latest
-    "@ds-pack/use-refs": ^1
-    "@types/node": ^14
-    "@types/react": ^18
-    "@vanilla-extract/babel-plugin": "*"
-    "@vanilla-extract/css": "*"
-    "@vanilla-extract/dynamic": "*"
-    "@vanilla-extract/next-plugin": "*"
-    babel-plugin-transform-imports: 2.0.0
-    nanopop: ^2
-    next: canary
-    next-transpile-modules: ^9.0.0
-    polished: ^4.2.2
-    rainbow-sprinkles: ^0.12
-    react: experimental
-    react-dom: experimental
-    typescript: ^4
-    webpack: ^5
-  languageName: unknown
-  linkType: soft
 
 "terser-webpack-plugin@npm:^5.1.3":
   version: 5.3.3
