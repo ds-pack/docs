@@ -9,6 +9,8 @@ import {
   Banner,
   Blockquote,
   Link as ExternalLink,
+  Button,
+  Checkbox,
 } from '@ds-pack/components'
 import { Header, Layout, Link } from '../../../components'
 import { flow } from '../../../utils.css'
@@ -297,6 +299,59 @@ export default function Packages() {
                 It supports custom elements via the <InlineCode>is</InlineCode>{' '}
                 prop!
               </Box>
+            </Stack>
+          </Box>
+          <Box id="button" my="$6">
+            <Heading is="h3" variant="subtitle">
+              Button
+            </Heading>
+            <Box
+              my="$4"
+              is="pre"
+              bg="$black"
+              color="$blue100"
+              p="$4"
+              borderRadius="$small"
+            >
+              <code>{`import {Button} from '@ds-pack/components';`}</code>
+            </Box>
+            <Text my="$4">
+              The <InlineCode>Button</InlineCode> component is used for user
+              interactions.
+            </Text>
+            <Text mb="$4" display="inline-flex" is="strong" fontWeight="bold">
+              Examples:
+            </Text>
+            <Stack gap="$4">
+              <Button>Click Me!</Button>
+              <Button variant="secondary">Secondary button</Button>
+              <Button variant="ghost">Ghost button</Button>
+              <Button variant="text">Text button</Button>
+            </Stack>
+          </Box>
+          <Box id="checkbox" my="$6">
+            <Heading is="h3" variant="subtitle">
+              Checkbox
+            </Heading>
+            <Box
+              my="$4"
+              is="pre"
+              bg="$black"
+              color="$blue100"
+              p="$4"
+              borderRadius="$small"
+            >
+              <code>{`import {Checkbox} from '@ds-pack/components';`}</code>
+            </Box>
+            <Text my="$4">
+              The <InlineCode>Checkbox</InlineCode> component allows the user to
+              select one or more options in a list.
+            </Text>
+            <Text mb="$4" display="inline-flex" is="strong" fontWeight="bold">
+              Examples:
+            </Text>
+            <Stack gap="$4">
+              <Checkbox>Select me!</Checkbox>
             </Stack>
           </Box>
         </Box>
